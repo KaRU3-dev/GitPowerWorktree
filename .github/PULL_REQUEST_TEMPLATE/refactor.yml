@@ -1,0 +1,37 @@
+name: "Refactoring"
+description: "リファクタリング用のプルリクエストテンプレート"
+title: "[Refactor] <リファクタリング内容の要約>"
+labels:
+  - refactor
+assignees:
+  - KaRU3-dev
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 概要
+      description: リファクタリングの目的や概要を記載してください
+      placeholder: 例）コードの可読性向上
+    validations:
+      required: true
+  - type: textarea
+    id: related-issue
+    attributes:
+      label: 関連するIssue
+      description: 関連するIssue番号やリンクがあれば記載してください
+  - type: textarea
+    id: changes
+    attributes:
+      label: 変更内容
+      description: 主なリファクタリング内容や改善点を箇条書きで記載してください
+      placeholder: "- 〇〇を整理\n- △△を最適化"
+  - type: textarea
+    id: test
+    attributes:
+      label: 動作確認
+      description: 動作確認内容や手順を記載してください
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考
+      description: その他、レビュワーに伝えたいことがあれば記載してください

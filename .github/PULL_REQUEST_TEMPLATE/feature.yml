@@ -1,0 +1,37 @@
+name: "Feature Addition"
+description: "新機能追加用のプルリクエストテンプレート"
+title: "[Feature] <追加機能の要約>"
+labels:
+  - enhancement
+assignees:
+  - KaRU3-dev
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 概要
+      description: 追加する機能の概要を記載してください
+      placeholder: 例）〇〇機能の追加
+    validations:
+      required: true
+  - type: textarea
+    id: related-issue
+    attributes:
+      label: 関連するIssue
+      description: 関連するIssue番号やリンクがあれば記載してください
+  - type: textarea
+    id: changes
+    attributes:
+      label: 追加内容
+      description: 追加した機能や主な変更点を箇条書きで記載してください
+      placeholder: "- 〇〇を追加\n- △△を修正"
+  - type: textarea
+    id: test
+    attributes:
+      label: 動作確認
+      description: 動作確認内容や手順を記載してください
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考
+      description: その他、レビュワーに伝えたいことがあれば記載してください

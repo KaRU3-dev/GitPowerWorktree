@@ -1,0 +1,37 @@
+name: "Bug Fix"
+description: "バグ修正用のプルリクエストテンプレート"
+title: "[Bugfix] <修正内容の要約>"
+labels:
+  - bug
+assignees:
+  - KaRU3-dev
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 概要
+      description: 修正するバグの概要を記載してください
+      placeholder: 例）〇〇のバグ修正
+    validations:
+      required: true
+  - type: textarea
+    id: related-issue
+    attributes:
+      label: 関連するIssue
+      description: 関連するIssue番号やリンクがあれば記載してください
+  - type: textarea
+    id: changes
+    attributes:
+      label: 修正内容
+      description: 修正した内容や主な変更点を箇条書きで記載してください
+      placeholder: "- 〇〇を修正\n- △△を改善"
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現手順・動作確認
+      description: バグの再現手順や修正後の動作確認内容を記載してください
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考
+      description: その他、レビュワーに伝えたいことがあれば記載してください
