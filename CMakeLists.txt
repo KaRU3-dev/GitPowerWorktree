@@ -9,12 +9,6 @@ endif()
 # src/include配下のヘッダーファイルをインクルードパスに追加
 include_directories(${CMAKE_SOURCE_DIR}/src/includes)
 
-# 取得できたファイルの表示
-foreach(file ${SRC_FILES})
-    message(STATUS "Found source file: ${file}")
-endforeach()
-
-
 # 実行ファイルの作成とライブラリのリンク
 add_executable(git-pt)
 
